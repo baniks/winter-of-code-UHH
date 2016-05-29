@@ -1,0 +1,54 @@
+Processing Gray Images...
+=========================
+
+Testcase 1: grey, small shape , pixeltype: uint8
+	Operation: Subsampling .... Time for 100 runs: 3.107843 seconds
+	Operation: Median Filter (5x5) .... Time for 100 runs: 406.77 seconds
+	Operation: Median Filter (11x11) .... Time for 100 runs: 406.899 seconds
+	Operation: Histogram .... Time for 100 runs: 663.224 seconds
+
+Testcase 2: grey, small shape , pixeltype: float
+	Operation: Subsampling .... Time for 100 runs: 4.191191 seconds
+	Operation: Median Filter (5x5) .... Time for 100 runs: 440.9127 seconds
+	Operation: Median Filter (11x11) .... Time for 100 runs: 410.26 seconds
+	Operation: Histogram .... Time for 100 runs: 874.762 seconds
+
+Testcase 3: grey, large shape , pixeltype: uint8
+	Operation: Subsampling .... Time for 100 runs: 11.3056 seconds
+	Operation: Median Filter (5x5) .... Time for 100 runs: 1716.994 seconds
+	Operation: Median Filter (11x11) .... Time for 100 runs: 1740.41 seconds
+	Operation: Histogram .... Time for 100 runs: 3180.185 seconds
+
+Testcase 4: grey, large shape , pixeltype: float
+	Operation: Subsampling .... Time for 100 runs: 14.9682 seconds
+	Operation: Median Filter (5x5) .... Time for 100 runs: 1724.725 seconds
+	Operation: Median Filter (11x11) .... Time for 100 runs: 1733.709 seconds
+	Operation: Histogram .... Time for 100 runs: 4494.66 seconds
+
+Processing Color Images...
+=========================
+
+Testcase 5: BGR, small shape , pixeltype: uint8
+	Operation: Subsampling ....Time for 100 runs: 55.941 seconds
+	Operation: Median Filter (5x5) ....Time for 100 runs: 2243.388 seconds
+	Operation: Median Filter (11x11) ....Time for 100 runs: 2230.832 seconds
+	Operation: Histogram ....Time for 100 runs: 2011.31 seconds
+
+Testcase 6: BGR, small shape , pixeltype: float
+	Operation: Subsampling ....Time for 100 runs: 55.031 seconds
+	Operation: Median Filter (5x5) ....Time for 100 runs: 2267.353 seconds
+	Operation: Median Filter (11x11) ....Time for 100 runs: 2252.408 seconds
+	Operation: Histogram ....Time for 100 runs: 2675.08 seconds
+
+Testcase 7: BGR, large shape , pixeltype: uint8
+	Operation: Subsampling ....Time for 100 runs: 189.809 seconds
+	Operation: Median Filter (5x5) ....Time for 100 runs: 8996.87 seconds
+	Operation: Median Filter (11x11) ....Time for 100 runs: 9086.25 seconds
+	Operation: Histogram ....Time for 100 runs: 9112.8 seconds
+
+Testcase 8: BGR, large shape , pixeltype: float
+	Operation: Subsampling ....Time for 100 runs: 224.056 seconds
+	Operation: Median Filter (5x5) ....Time for 100 runs: 9089.013 seconds
+	Operation: Median Filter (11x11) ....Time for 100 runs: 9088.24 seconds
+	Operation: Histogram ....Time for 100 runs: 10761.4 seconds
+
