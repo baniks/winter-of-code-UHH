@@ -1,0 +1,95 @@
+======================================================================
+Die	Aufgabe
+Implementierung elementarer, häufig benötigter Bildverarbeitungsfunktionen (siehe folgende Folien )	
+•Zeitmessung der Laufzeit
+•Kompletter	Code muss C/C++	kompilierbar sein
+•C/C++,	ASM,	OpenCL,	CUDA,	MulB-Threading	und	Multi-Processing	sind erlaubt !	
+•Tipp:	
+Legt ein Experimentier-Tagebuch an und dokumentiert eure Versuche von Anfang an!
+------------------------------------------------------------------------------
+The Task:
+Implementation of elementary, frequently used image editing functions (see following slides)
+• timing of maturity
+• Complete Code has C / C ++ be compilable
+• C / C ++, ASM, OpenCL, CUDA, MulB-threading and multi-processing are allowed!
+• Tip:
+Creates an experimental diary and documenting your tests from the very beginning!
+======================================================================
+Das Ziel
+Vergleich der Möglichkeiten zur effizienten Bildverarbeitung auf aktuellen Architekturen
+Erstellung von Empfehlungen aufgrund der StatisBken 
+Untersuchung von Laufzeit,	Arbeitsspeicher	und	Auslastung!	
+------------------------------------------------------------------------------
+The Goal:
+Comparison of options for efficient image processing on the current architectures
+Creation of recommendations based on the Statistics
+Investigation of runtime, memory, and utilization
+======================================================================
+Setting(1)
+Alle folgenden Bildverarbeitungsoperationen sollen auf folgenden Bilddaten ausgeführt werden :	
+
+Grauwertbilder	(2D-Arrays)	
+Farbbilder 	(3D-Arrays,	3.	Dimension:	RGB)	
+Bildgrößen :	2048x2048	Pixel,	4096x4096	Pixel	
+Pixeldatentypen:	UInt8,	float(32)
+
+Beiinsgesamt 10	Operationen:	80	Tests	pro	team
+Bei 5 Teams	(+1	Referenz):	480	Ergebnisse
+----------------------------------------------------------------------------------
+All subsequent image processing operators to run on the following image data:
+Gray scale images (2D array)
+Color images (3D arrays, 3rd dimension: RGB)
+Image sizes: 2048x2048 pixel, 4096x4096 pixels
+Pixel data types: UInt8, float (32)
+With a total of 10 operations: 80 tests per team
+At 5 Teams (+1 reference): 480 results
+
+======================================================================
+Setting(2)
+Es zählt nur die Laufzeit der Operation, Laden und Speichern des Bildes werden nicht mitgezählt!	
+•
+Aber:		
+–Alle Tests müssen je100 xlaufen!	
+–Maß	am Ende:	Gesamtlaufzeit!	
+
+3 Typen	von	Bildverarbeitungsverfahren:	
+–Map/Reduce	
+–Filter	
+–Transformationen
+
+--------------------------------------------------------------------
+
+Setting (2)
+What matters is the maturity of the operation, loading and saving of the image will not be counted!
+•But:
+-All tests have to be performed 100 times each!
+-Degree at the end: total running time!
+•3 types of image processing methods:
+-Map / Reduce
+-filter
+-transformations
+
+======================================================================
+Zusammenfassung
+1.Bild-Blending	
+2.Schwellenwert
+3.Histogrammberechnung
+4.Gauß’sche GläPung (5x5)	
+5.Gauß’sche GläPung (11x11)	
+6.Medianfilter (5x5)	
+7.Medianfilter (11x11)	
+8.Binning	(2x2->1x1)	
+9.Rotation	(NN-Interpolation)	
+10.Rotation	(Bi-lineare	Interpolation)
+-------------------------------------------------------
+Summary
+1.image blending
+2.threshold
+3.Histogramm calculation
+4.Gauß'sche Smoothing (5x5)
+5.Gauß'sche Smoothing (11x11)
+6.Medianfilter (5x5)
+7.Medianfilter (11x11)
+8.Binning/Subsampling (2x2> 1x1)
+9.Rotation (NN interpolation)
+10.Rotation (Bi-linear interpolation)
